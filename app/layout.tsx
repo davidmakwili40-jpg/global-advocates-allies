@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { site } from "@/data/site";
+import { mediaAssets } from "@/data/media";
 import { organizationJsonLd } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
@@ -15,18 +16,31 @@ export const metadata: Metadata = {
   },
   description: site.description,
   applicationName: site.name,
+  icons: {
+    icon: "/icons/icon-192.png",
+    apple: "/icons/icon-192.png"
+  },
   openGraph: {
     title: site.name,
     description: site.description,
     url: site.url,
     siteName: site.name,
     locale: "en_US",
-    type: "website"
+    type: "website",
+    images: [
+      {
+        url: mediaAssets.logo.src,
+        width: 1200,
+        height: 1200,
+        alt: mediaAssets.logo.alt
+      }
+    ]
   },
   twitter: {
     card: "summary_large_image",
     title: site.name,
-    description: site.description
+    description: site.description,
+    images: [mediaAssets.logo.src]
   },
   robots: {
     index: true,

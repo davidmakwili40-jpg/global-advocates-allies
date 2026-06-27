@@ -55,6 +55,7 @@ See `docs/phase-5-design-system.md`.
 - Phase 8 conversion funnels: `docs/phase-8-conversion-funnels.md`
 - Phase 9 admin architecture: `docs/phase-9-admin-architecture.md`
 - Phase 10 optimization and QA: `docs/phase-10-optimization-qa.md`
+- Final production transformation: `docs/final-production.md`
 
 ## Deployment
 

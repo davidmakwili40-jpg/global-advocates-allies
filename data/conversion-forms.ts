@@ -55,27 +55,51 @@ export const conversionForms = {
   assistance: {
     id: "assistance-form",
     title: "Assistance request",
-    description: "Provide enough context for future secure intake and triage workflows.",
+    description:
+      "Request pet food, vaccination, pet deposits, boarding, emotional support animal letters, vet bill help, or adoption assistance.",
     submitLabel: "Prepare Assistance Request",
     endpointKey: "ASSISTANCE_ENDPOINT",
     integrationNote: "Connect this form to secure case intake before enabling live submissions.",
     fields: [
       { name: "name", label: "Full name", type: "text", required: true },
       { name: "email", label: "Email", type: "email", required: true },
-      { name: "phone", label: "Phone", type: "tel" },
+      { name: "phone", label: "Phone number", type: "tel", required: true },
+      { name: "address", label: "Address", type: "textarea", required: true },
       {
-        name: "need",
-        label: "Primary need",
+        name: "petType",
+        label: "Type of pet",
         type: "select",
         required: true,
         options: [
-          { label: "Pet-inclusive resources", value: "pet-resources" },
-          { label: "Older adult support", value: "older-adult-support" },
-          { label: "Family advocacy", value: "family-advocacy" },
-          { label: "Animal welfare concern", value: "animal-welfare" }
+          { label: "Dog", value: "dog" },
+          { label: "Cat", value: "cat" },
+          { label: "Bird", value: "bird" },
+          { label: "Cat and dog", value: "cat-and-dog" },
+          { label: "Other", value: "other" }
         ]
       },
-      { name: "situation", label: "Situation summary", type: "textarea", required: true }
+      { name: "petCount", label: "How many pets", type: "text", required: true },
+      { name: "yearlyIncome", label: "Yearly income level", type: "text", required: true },
+      {
+        name: "services",
+        label: "Services needed",
+        type: "textarea",
+        required: true,
+        helperText:
+          "Examples listed on the official site include food, supplies, vaccination, pet deposit, boarding, emotional support animal letter, vet bill assistance, and adoption assistance."
+      },
+      {
+        name: "agreement",
+        label: "Recipient agreement",
+        type: "select",
+        required: true,
+        helperText:
+          "Recipients must not breed, sell, flip, resell, redistribute, or return assistance items.",
+        options: [
+          { label: "Yes, I understand", value: "yes" },
+          { label: "No", value: "no" }
+        ]
+      }
     ]
   },
   contact: {

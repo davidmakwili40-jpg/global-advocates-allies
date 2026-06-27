@@ -20,62 +20,67 @@ export type PublicPageContent = {
 
 export const publicPages = {
   about: {
-    title: "About Global Advocates & Allies",
+    title: "About Global Advocates and Allies Inc.",
     description:
-      "A nonprofit built to help households, care partners, and community organizations protect the bonds that keep people and animals stable.",
+      "Global Advocates and Allies Inc. is a BIPOC-led human and animal well-being organization providing assistance through education, empowerment, and connecting people and animals to resources and like-minded networks.",
     primaryCta: { label: "Explore Programs", href: "/programs" },
     secondaryCta: { label: "Contact the Team", href: "/contact" },
     sections: [
       {
-        title: "Built for the moments when systems feel hard to navigate",
+        title: "A human and animal well-being organization",
         body:
-          "Global Advocates & Allies exists for families, older adults, caregivers, and advocates who need practical support before a preventable crisis becomes separation. The organization centers care coordination, education, and resource navigation for people and animals together."
+          "The official website describes Global Advocates and Allies Inc. as a Black, Indigenous, and People of Color led organization committed to ensuring diversity, equity, and inclusion in human and animal well-being."
       },
       {
         title: "How the work is organized",
         body:
-          "Programs are designed around real household needs: pet-inclusive stability, humane support, family advocacy, older adult dignity, and partner coordination.",
-        items: ["Listen first", "Map options clearly", "Coordinate with trusted partners", "Protect dignity and privacy"]
+          "The organization connects people and animals to resources, support networks, education, and empowerment pathways.",
+        items: [
+          "Promote diversity and equity",
+          "Help develop skills needed for self-sufficiency",
+          "Inspire and help empower",
+          "Connect people and animals to resources"
+        ]
       }
     ]
   },
   mission: {
     title: "Our Mission",
     description:
-      "To support people and animals through advocacy, education, resources, and care that preserve safety, dignity, and connection.",
+      "To help create equality for older adults, children, and animals in the poorest communities of the world through advocacy, strengthening, and education.",
     primaryCta: { label: "Request Assistance", href: "/apply-for-assistance" },
     secondaryCta: { label: "Donate", href: "/donate" },
     sections: [
       {
-        title: "Advocacy that stays close to daily life",
+        title: "Equality for older adults, children, and animals",
         body:
-          "The mission is practical: help households understand available options, connect with reliable partners, and keep essential relationships intact during pressure points such as housing instability, medical disruption, caregiving transitions, and animal welfare needs."
+          "The official mission centers equality for older adults, children, and animals in the poorest communities of the world through advocacy, strengthening, and education."
       },
       {
-        title: "What mission-aligned support looks like",
+        title: "Mission-aligned support",
         body:
-          "Support should be clear, compassionate, and grounded in the needs of the person seeking help.",
-        items: ["Resource navigation", "Pet-inclusive planning", "Community education", "Care partner referral pathways"]
+          "The work applies knowledge about social determinants of health toward improving the lives of animals, older adults, and children.",
+        items: ["Advocacy", "Strengthening", "Education", "Resource connection"]
       }
     ]
   },
   vision: {
     title: "Our Vision",
     description:
-      "A future where no family is separated from safety, dignity, or a beloved companion because support arrived too late.",
+      "A world where older adults, children, animals, and families in underserved communities experience equity, support, and access to resources.",
     primaryCta: { label: "Volunteer", href: "/volunteer" },
     secondaryCta: { label: "Read Stories", href: "/success-stories" },
     sections: [
       {
-        title: "A stronger care network",
+        title: "Equity in impoverished communities",
         body:
-          "Global Advocates & Allies envisions communities where humane services, family support, older adult resources, and pet-inclusive solutions work together instead of forcing households to solve complex problems alone."
+          "The official site states that the organization does whatever it takes to create equity in the most impoverished communities and populations."
       },
       {
         title: "The future we are building toward",
         body:
-          "Every program should make help easier to find, easier to understand, and easier to act on.",
-        items: ["Accessible information", "Trusted referrals", "Compassionate response", "Long-term community learning"]
+          "The vision is expressed through empowerment, animal welfare, older adult support, child advocacy, and resource access.",
+        items: ["Empowerment", "Advocacy", "Education", "Community resources"]
       }
     ]
   },
@@ -102,20 +107,20 @@ export const publicPages = {
   donate: {
     title: "Donate",
     description:
-      "Support advocacy, education, resource navigation, and care coordination for families, older adults, children, and animals.",
+      "Help impact the lives of children, older adults, and animals through safe and easy giving pathways.",
     primaryCta: { label: "Open Donation Options", href: "/donate#donation-form" },
     secondaryCta: { label: "Corporate Sponsorship", href: "/donate#sponsorship" },
     sections: [
       {
-        title: "Gifts strengthen practical support",
+        title: "Safe and easy donations",
         body:
-          "Donations help maintain the infrastructure behind responsive care: resource libraries, community education, volunteer coordination, outreach materials, and the operational work that makes support easier to access."
+          "The official website frames donations as a way to help impact the lives of children, older adults, and animals."
       },
       {
         title: "Funding priorities",
         body:
-          "Giving pathways are prepared for future payment processing and campaign reporting.",
-        items: ["Resource navigation", "Pet-inclusive family stability", "Volunteer coordination", "Community education"]
+          "Donation messaging should connect directly to services shown on the official site.",
+        items: ["Children", "Older adults", "Animal care", "Pets and Families Forever"]
       }
     ]
   },
@@ -176,20 +181,20 @@ export const publicPages = {
   assistance: {
     title: "Apply for Assistance",
     description:
-      "Start a support request for advocacy, resources, or pet-inclusive care coordination when your household needs help navigating options.",
+      "Contact Global Advocates and Allies for assistance with pet food, vaccination, pet deposits, boarding, emotional support animal letters, vet bills, and pet adoption assistance.",
     primaryCta: { label: "Start Request", href: "/apply-for-assistance#assistance-form" },
     secondaryCta: { label: "Explore Resources", href: "/resources" },
     sections: [
       {
-        title: "A calm intake path",
+        title: "Pets and Families Forever assistance",
         body:
-          "The assistance funnel gathers only the information needed to understand the situation and prepare a thoughtful next step. It is structured for future secure submission, triage, and follow-up workflows."
+          "The official website lists pet food and supplies, vaccination, pet deposits, boarding, emotional pet support animal letters, compassionate animal education, assistance with vet bills and vaccinations, and pet adoption assistance."
       },
       {
         title: "What helps the team respond",
         body:
-          "Clear context makes routing easier while protecting privacy.",
-        items: ["Household needs", "Animal care needs", "Timing and urgency", "Preferred contact method"]
+          "The public form also states that the organization cannot donate to anyone breeding, selling, or flipping animals and reserves the right to refuse assistance under any circumstance.",
+        items: ["Pet food and supplies", "Vaccination", "Pet deposit", "Boarding", "Vet bill assistance"]
       }
     ]
   },

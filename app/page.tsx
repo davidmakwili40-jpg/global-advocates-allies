@@ -9,6 +9,7 @@ import { AssistanceCTA } from "@/components/sections/AssistanceCTA";
 import { CTASection } from "@/components/sections/CTASection";
 import { DonationCTA } from "@/components/sections/DonationCTA";
 import { ImpactStats } from "@/components/sections/ImpactStats";
+import { MediaFeature } from "@/components/sections/MediaFeature";
 import { VolunteerCTA } from "@/components/sections/VolunteerCTA";
 import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
@@ -17,6 +18,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { designPrinciples } from "@/data/design-system";
 import { events } from "@/data/events";
 import { impactMetrics } from "@/data/impact";
+import { mediaAssets } from "@/data/media";
 import { programs } from "@/data/programs";
 import { stories } from "@/data/stories";
 
@@ -28,13 +30,23 @@ export default function HomePage() {
         <Container className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
           <SectionHeading
             eyebrow="Mission"
-            title="Compassionate advocacy for people, animals, and the bonds that sustain them."
-            description="We work across community systems to reduce preventable separation, improve access to trusted resources, and help households move through crisis with dignity."
+            title="Equity and inclusion in human and animal welfare."
+            description="Global Advocates and Allies Inc. is a BIPOC-led organization committed to creating equality for older adults, children, and animals through advocacy, strengthening, and education."
           />
           <p className="text-xl leading-9 text-ink/70">
-            Global Advocates & Allies is built for real-world care: practical navigation, partner
-            coordination, humane education, and direct pathways to support.
+            The official site describes the work as assistance through education, empowerment, and
+            connecting people and animals to resources and like-minded networks.
           </p>
+        </Container>
+      </section>
+      <section className="editorial-section bg-canvas-cool">
+        <Container>
+          <MediaFeature
+            body="The public site highlights Pets and Families Forever assistance for pet food, supplies, vaccination, deposits, boarding, emotional support animal letters, vet bill help, and adoption assistance."
+            eyebrow="Official program focus"
+            image={mediaAssets.feedingDogs}
+            title="Paw Prints in My Heart"
+          />
         </Container>
       </section>
       <section className="bg-canvas-warm editorial-section">

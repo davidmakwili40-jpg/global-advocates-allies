@@ -102,3 +102,13 @@ body {
     @apply transition-colors duration-200 ease-editorial;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-video {
+    display: none;
+  }
+
+  .hero-fallback-image {
+    display: block;
+  }
+}

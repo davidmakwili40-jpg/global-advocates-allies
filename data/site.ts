@@ -1,15 +1,11 @@
 export const site = {
-  name: "Global Advocates & Allies",
+  name: "Global Advocates and Allies Inc.",
   shortName: "GAA",
-  url: "https://globaladvocatesallies.org",
+  url: "https://globaladvocatesandallies.org",
   description:
-    "Global Advocates & Allies supports people and animals through advocacy, education, resources, and care.",
-  email: "hello@globaladvocatesallies.org",
-  phone: "(555) 012-0198",
-  address: "Community resource office, serving families by appointment",
-  social: {
-    instagram: "https://instagram.com/globaladvocatesallies",
-    facebook: "https://facebook.com/globaladvocatesallies",
-    linkedin: "https://linkedin.com/company/global-advocates-allies"
-  }
+    "Global Advocates and Allies Inc. is a BIPOC-led human and animal welfare organization providing assistance through education, empowerment, and connecting people and animals to resources and like-minded networks.",
+  email: "info@globaladvocatesandallies.org",
+  phone: "+1 786-320-2003",
+  address: "Physical address not publicly listed on the official website",
+  social: {}
 } as const;
