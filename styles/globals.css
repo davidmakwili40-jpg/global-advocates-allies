@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-serif: "Georgia", "Iowan Old Style", "Times New Roman", serif;
+  --measure: 72ch;
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background: #fbfaf6;
+  color: #17201a;
+  min-height: 100vh;
+  font-feature-settings:
+    "kern" 1,
+    "liga" 1,
+    "calt" 1;
+}
+
+::selection {
+  background: #f5e9bf;
+  color: #17201a;
+}
+
+@layer base {
+  :focus-visible {
+    outline: 3px solid #d7624c;
+    outline-offset: 3px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    font: inherit;
+  }
+}
+
+@layer components {
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-ink focus:px-4 focus:py-3 focus:text-sm focus:font-semibold focus:text-white;
+  }
+
+  .editorial-section {
+    @apply py-section-sm sm:py-section lg:py-section-lg;
+  }
+
+  .surface-line {
+    @apply border border-ink/10 bg-paper;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55);
+  }
+
+  .fine-rule {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-ink/15 to-transparent;
+  }
+
+  .kicker {
+    @apply text-eyebrow uppercase text-coral-700;
+  }
+
+  .prose-measure {
+    max-width: var(--measure);
+  }
+
+  .motion-lift {
+    @apply transition duration-300 ease-editorial motion-safe:hover:-translate-y-0.5 motion-safe:active:translate-y-0;
+  }
+
+  .motion-link {
+    @apply transition-colors duration-200 ease-editorial;
+  }
+}
